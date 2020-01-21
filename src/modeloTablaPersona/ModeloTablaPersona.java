@@ -73,7 +73,7 @@ public class ModeloTablaPersona extends AbstractTableModel {
             case 5:
                 return personaSeleccionada.getCorreo();
             case 6:
-                return formatGenero(1);
+                return formatGenero(personaSeleccionada.getGenero());
             case 7:
                 return personaSeleccionada.getEstado();
             default:
@@ -147,9 +147,9 @@ public class ModeloTablaPersona extends AbstractTableModel {
             case 0:
                 return "S/N";
             case 1:
-                return "Lacteos";
+                return "Masculino";
             case 2:
-                return "Abarrotes";
+                return "Femenino";
             default:
                 return "";
         }
