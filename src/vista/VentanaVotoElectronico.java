@@ -36,6 +36,8 @@ public class VentanaVotoElectronico extends javax.swing.JFrame {
     public VentanaVotoElectronico(Usuario u, Factory f) {
         this.f = f;
         this.usuario = u;
+        
+        
         vc = new VotoJpaController(f.getEntityManagerFactory());
         vnc = new VotoNuloJpaController(f.getEntityManagerFactory());
         pc = new PersonaJpaController(f.getEntityManagerFactory());
