@@ -97,7 +97,7 @@ public class PrincipalAcceso extends javax.swing.JFrame {
         });
         panelRect1.add(bttCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 320, 130, 40));
 
-        psPassword.setBackground(new java.awt.Color(240, 240, 240));
+        psPassword.setBackground(new java.awt.Color(51, 51, 51));
         psPassword.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         psPassword.setForeground(new java.awt.Color(255, 255, 255));
         psPassword.setBorder(null);
@@ -122,7 +122,7 @@ public class PrincipalAcceso extends javax.swing.JFrame {
         panelRect1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 190, 190, 10));
         panelRect1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, 190, 10));
 
-        txtUsuario.setEditable(false);
+        txtUsuario.setBackground(new java.awt.Color(0, 0, 0));
         txtUsuario.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         txtUsuario.setForeground(new java.awt.Color(255, 255, 255));
         txtUsuario.setBorder(null);
@@ -136,23 +136,19 @@ public class PrincipalAcceso extends javax.swing.JFrame {
         });
         panelRect1.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 160, 189, 30));
 
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
         jLabel3.setText("Elecciones 2020");
-        panelRect1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, 360, 70));
+        panelRect1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 30, 290, 70));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(panelRect1, javax.swing.GroupLayout.PREFERRED_SIZE, 542, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(panelRect1, javax.swing.GroupLayout.PREFERRED_SIZE, 515, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(panelRect1, javax.swing.GroupLayout.DEFAULT_SIZE, 509, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(panelRect1, javax.swing.GroupLayout.PREFERRED_SIZE, 443, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
