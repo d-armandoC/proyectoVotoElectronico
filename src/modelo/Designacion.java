@@ -30,6 +30,8 @@ import javax.persistence.Table;
     , @NamedQuery(name = "Designacion.findByNombre", query = "SELECT d FROM Designacion d WHERE d.nombre = :nombre")
     , @NamedQuery(name = "Designacion.findByDescripcion", query = "SELECT d FROM Designacion d WHERE d.descripcion = :descripcion")})
 public class Designacion implements Serializable {
+    
+    // verificando los cambios.....
 
     private static final long serialVersionUID = 1L;
     @Id

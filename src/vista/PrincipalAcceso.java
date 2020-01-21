@@ -43,7 +43,6 @@ public class PrincipalAcceso extends javax.swing.JFrame {
 
         panelNice1 = new org.edisoncor.gui.panel.PanelNice();
         panelRect1 = new org.edisoncor.gui.panel.PanelRect();
-        panelImage2 = new org.edisoncor.gui.panel.PanelImage();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         bttAceptar = new javax.swing.JButton();
@@ -53,40 +52,26 @@ public class PrincipalAcceso extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         txtUsuario = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        panelRect1.setForeground(new java.awt.Color(0, 0, 204));
+        panelRect1.setForeground(new java.awt.Color(255, 255, 255));
         panelRect1.setColorDeBorde(new java.awt.Color(255, 255, 255));
-        panelRect1.setColorPrimario(new java.awt.Color(0, 0, 153));
+        panelRect1.setColorPrimario(new java.awt.Color(255, 255, 255));
         panelRect1.setColorSecundario(new java.awt.Color(0, 0, 153));
         panelRect1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panelImage2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/logo_elecciones2018.png"))); // NOI18N
-
-        javax.swing.GroupLayout panelImage2Layout = new javax.swing.GroupLayout(panelImage2);
-        panelImage2.setLayout(panelImage2Layout);
-        panelImage2Layout.setHorizontalGroup(
-            panelImage2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        panelImage2Layout.setVerticalGroup(
-            panelImage2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        panelRect1.add(panelImage2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, 250, 120));
-
         jLabel2.setFont(new java.awt.Font("Verdana", 3, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("CONTRASEÑA:");
-        panelRect1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, -1, -1));
+        jLabel2.setText("Contraseña:");
+        panelRect1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Verdana", 3, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("USUARIO:");
-        panelRect1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 120, 20));
+        jLabel1.setText("Usuario:");
+        panelRect1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 120, 20));
 
         bttAceptar.setBackground(new java.awt.Color(0, 0, 153));
         bttAceptar.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
@@ -98,7 +83,7 @@ public class PrincipalAcceso extends javax.swing.JFrame {
                 bttAceptarActionPerformed(evt);
             }
         });
-        panelRect1.add(bttAceptar, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 130, 40));
+        panelRect1.add(bttAceptar, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, 130, 60));
 
         bttCancelar.setBackground(new java.awt.Color(0, 0, 153));
         bttCancelar.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
@@ -110,9 +95,9 @@ public class PrincipalAcceso extends javax.swing.JFrame {
                 bttCancelarActionPerformed(evt);
             }
         });
-        panelRect1.add(bttCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 330, 130, 40));
+        panelRect1.add(bttCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 270, 150, 60));
 
-        psPassword.setBackground(new java.awt.Color(0, 0, 153));
+        psPassword.setBackground(new java.awt.Color(51, 51, 51));
         psPassword.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         psPassword.setForeground(new java.awt.Color(255, 255, 255));
         psPassword.setBorder(null);
@@ -129,15 +114,15 @@ public class PrincipalAcceso extends javax.swing.JFrame {
                 psPasswordKeyPressed(evt);
             }
         });
-        panelRect1.add(psPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, 200, 30));
+        panelRect1.add(psPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 200, 250, 40));
 
         progresoHilo.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
         progresoHilo.setForeground(new java.awt.Color(255, 255, 255));
-        panelRect1.add(progresoHilo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 390, 350, -1));
-        panelRect1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 190, 190, 10));
-        panelRect1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, 190, 10));
+        panelRect1.add(progresoHilo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 480, 30));
+        panelRect1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 160, 250, 10));
+        panelRect1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, 250, 10));
 
-        txtUsuario.setBackground(new java.awt.Color(0, 0, 153));
+        txtUsuario.setBackground(new java.awt.Color(0, 0, 0));
         txtUsuario.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         txtUsuario.setForeground(new java.awt.Color(255, 255, 255));
         txtUsuario.setBorder(null);
@@ -149,17 +134,25 @@ public class PrincipalAcceso extends javax.swing.JFrame {
                 txtUsuarioActionPerformed(evt);
             }
         });
-        panelRect1.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 160, 189, 30));
+        panelRect1.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 120, 250, 40));
+
+        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 153));
+        jLabel3.setText("Elecciones 2020");
+        panelRect1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 260, 70));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelRect1, javax.swing.GroupLayout.DEFAULT_SIZE, 428, Short.MAX_VALUE)
+            .addComponent(panelRect1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelRect1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 429, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(panelRect1, javax.swing.GroupLayout.PREFERRED_SIZE, 411, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 2, Short.MAX_VALUE))
         );
 
         pack();
@@ -208,9 +201,9 @@ public class PrincipalAcceso extends javax.swing.JFrame {
     private javax.swing.JButton bttCancelar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private org.edisoncor.gui.panel.PanelImage panelImage2;
     private org.edisoncor.gui.panel.PanelNice panelNice1;
     private org.edisoncor.gui.panel.PanelRect panelRect1;
     private javax.swing.JProgressBar progresoHilo;
