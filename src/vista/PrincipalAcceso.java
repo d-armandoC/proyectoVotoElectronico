@@ -138,7 +138,7 @@ public class PrincipalAcceso extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
         jLabel3.setText("Elecciones 2020");
-        panelRect1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 290, 70));
+        panelRect1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 30, 290, 70));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
