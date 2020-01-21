@@ -66,12 +66,12 @@ public class PrincipalAcceso extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Verdana", 3, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Contraseña:");
-        panelRect1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, -1, -1));
+        panelRect1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Verdana", 3, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Usuario:");
-        panelRect1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 120, 20));
+        panelRect1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 120, 20));
 
         bttAceptar.setBackground(new java.awt.Color(0, 0, 153));
         bttAceptar.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
@@ -83,7 +83,7 @@ public class PrincipalAcceso extends javax.swing.JFrame {
                 bttAceptarActionPerformed(evt);
             }
         });
-        panelRect1.add(bttAceptar, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 130, 40));
+        panelRect1.add(bttAceptar, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, 130, 60));
 
         bttCancelar.setBackground(new java.awt.Color(0, 0, 153));
         bttCancelar.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
@@ -95,7 +95,7 @@ public class PrincipalAcceso extends javax.swing.JFrame {
                 bttCancelarActionPerformed(evt);
             }
         });
-        panelRect1.add(bttCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 320, 130, 40));
+        panelRect1.add(bttCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 270, 150, 60));
 
         psPassword.setBackground(new java.awt.Color(51, 51, 51));
         psPassword.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -114,13 +114,13 @@ public class PrincipalAcceso extends javax.swing.JFrame {
                 psPasswordKeyPressed(evt);
             }
         });
-        panelRect1.add(psPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, 190, 30));
+        panelRect1.add(psPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 200, 250, 40));
 
         progresoHilo.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
         progresoHilo.setForeground(new java.awt.Color(255, 255, 255));
-        panelRect1.add(progresoHilo, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 400, 350, -1));
-        panelRect1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 190, 190, 10));
-        panelRect1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, 190, 10));
+        panelRect1.add(progresoHilo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 480, 30));
+        panelRect1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 160, 250, 10));
+        panelRect1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, 250, 10));
 
         txtUsuario.setBackground(new java.awt.Color(0, 0, 0));
         txtUsuario.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -134,21 +134,25 @@ public class PrincipalAcceso extends javax.swing.JFrame {
                 txtUsuarioActionPerformed(evt);
             }
         });
-        panelRect1.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 160, 189, 30));
+        panelRect1.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 120, 250, 40));
 
+        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 153));
         jLabel3.setText("Elecciones 2020");
-        panelRect1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 30, 290, 70));
+        panelRect1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 260, 70));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelRect1, javax.swing.GroupLayout.PREFERRED_SIZE, 515, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(panelRect1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelRect1, javax.swing.GroupLayout.PREFERRED_SIZE, 443, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(panelRect1, javax.swing.GroupLayout.PREFERRED_SIZE, 411, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 2, Short.MAX_VALUE))
         );
 
         pack();
