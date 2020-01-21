@@ -62,6 +62,8 @@ public class Persona implements Serializable {
     private String correo;
     @Column(name = "genero")
     private Integer genero;
+    @Column(name = "curso")
+    private Integer curso;
     @Column(name = "direccion")
     private String direccion;
     @Column(name = "foto")
@@ -82,6 +84,14 @@ public class Persona implements Serializable {
 
     public Persona(Integer idPersona) {
         this.idPersona = idPersona;
+    }
+
+    public Integer getCurso() {
+        return curso;
+    }
+
+    public void setCurso(Integer curso) {
+        this.curso = curso;
     }
 
     public Integer getIdPersona() {

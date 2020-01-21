@@ -59,6 +59,7 @@ public class VentanaVotoElectronico extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         bttLista2 = new javax.swing.JButton();
         panelImage3 = new org.edisoncor.gui.panel.PanelImage();
+        jButton1 = new javax.swing.JButton();
         panelRect1 = new org.edisoncor.gui.panel.PanelRect();
         panelImage4 = new org.edisoncor.gui.panel.PanelImage();
         jLabel4 = new javax.swing.JLabel();
@@ -89,7 +90,7 @@ public class VentanaVotoElectronico extends javax.swing.JFrame {
         panel2.setColorSecundario(new java.awt.Color(255, 255, 255));
 
         panelImage1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 0)));
-        panelImage1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/presidentes/0106748932.png"))); // NOI18N
+        panelImage1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/presidentes/0000000000.png"))); // NOI18N
 
         javax.swing.GroupLayout panelImage1Layout = new javax.swing.GroupLayout(panelImage1);
         panelImage1.setLayout(panelImage1Layout);
@@ -106,7 +107,7 @@ public class VentanaVotoElectronico extends javax.swing.JFrame {
         jLabel9.setForeground(new java.awt.Color(255, 255, 0));
         jLabel9.setText(" LISTA \"2\"");
 
-        bttLista2.setBackground(new java.awt.Color(0, 51, 153));
+        bttLista2.setBackground(new java.awt.Color(255, 255, 255));
         bttLista2.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
         bttLista2.setForeground(new java.awt.Color(255, 255, 255));
         bttLista2.setText("ELEGIR COMO PRESIDENTE  ESTUDIANTIL");
@@ -117,52 +118,56 @@ public class VentanaVotoElectronico extends javax.swing.JFrame {
             }
         });
 
-        panelImage3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/JAP.jpg"))); // NOI18N
+        panelImage3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logos/sinLogo.png"))); // NOI18N
 
         javax.swing.GroupLayout panelImage3Layout = new javax.swing.GroupLayout(panelImage3);
         panelImage3.setLayout(panelImage3Layout);
         panelImage3Layout.setHorizontalGroup(
             panelImage3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 222, Short.MAX_VALUE)
+            .addGap(0, 202, Short.MAX_VALUE)
         );
         panelImage3Layout.setVerticalGroup(
             panelImage3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 199, Short.MAX_VALUE)
+            .addGap(0, 210, Short.MAX_VALUE)
         );
+
+        jButton1.setText("jButton1");
 
         javax.swing.GroupLayout panel2Layout = new javax.swing.GroupLayout(panel2);
         panel2.setLayout(panel2Layout);
         panel2Layout.setHorizontalGroup(
             panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
             .addGroup(panel2Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(52, 52, 52)
                 .addComponent(panelImage3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
                 .addGroup(panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(panelImage1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(125, 125, 125))
             .addGroup(panel2Layout.createSequentialGroup()
-                .addContainerGap(230, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36)
                 .addComponent(bttLista2, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(25, 25, 25))
         );
         panel2Layout.setVerticalGroup(
             panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel2Layout.createSequentialGroup()
-                .addGroup(panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panel2Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(panelImage1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                    .addGroup(panel2Layout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addComponent(panelImage3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(panelImage1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(bttLista2, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
+            .addGroup(panel2Layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(panelImage3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29))
         );
 
         getContentPane().add(panel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 340, 680, 410));
@@ -190,7 +195,7 @@ public class VentanaVotoElectronico extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 3, 48)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("ELECCIONES DEL CONSEJO ESTUDIANTIL 2018");
+        jLabel4.setText("ELECCIONES DEL CONSEJO ESTUDIANTIL 2020");
         panelRect1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, 1090, -1));
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
@@ -277,7 +282,7 @@ public class VentanaVotoElectronico extends javax.swing.JFrame {
         jLabel7.setText(" LISTA \"1\"");
 
         panelImage2.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 0)));
-        panelImage2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/presidentes/1400947535.png"))); // NOI18N
+        panelImage2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/presidentes/carlos.jpg"))); // NOI18N
 
         javax.swing.GroupLayout panelImage2Layout = new javax.swing.GroupLayout(panelImage2);
         panelImage2.setLayout(panelImage2Layout);
@@ -290,7 +295,7 @@ public class VentanaVotoElectronico extends javax.swing.JFrame {
             .addGap(0, 279, Short.MAX_VALUE)
         );
 
-        bttLista1.setBackground(new java.awt.Color(0, 51, 153));
+        bttLista1.setBackground(new java.awt.Color(0, 0, 204));
         bttLista1.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
         bttLista1.setForeground(new java.awt.Color(255, 255, 255));
         bttLista1.setText("ELEGIR COMO PRESIDENTE ESTUDIANTIL");
@@ -301,17 +306,17 @@ public class VentanaVotoElectronico extends javax.swing.JFrame {
             }
         });
 
-        panelImage5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/CEBC.jpg"))); // NOI18N
+        panelImage5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logos/LIsta1.png"))); // NOI18N
 
         javax.swing.GroupLayout panelImage5Layout = new javax.swing.GroupLayout(panelImage5);
         panelImage5.setLayout(panelImage5Layout);
         panelImage5Layout.setHorizontalGroup(
             panelImage5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 213, Short.MAX_VALUE)
+            .addGap(0, 256, Short.MAX_VALUE)
         );
         panelImage5Layout.setVerticalGroup(
             panelImage5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 203, Short.MAX_VALUE)
+            .addGap(0, 272, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout panel1Layout = new javax.swing.GroupLayout(panel1);
@@ -323,12 +328,12 @@ public class VentanaVotoElectronico extends javax.swing.JFrame {
                 .addComponent(panelImage5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panel1Layout.createSequentialGroup()
-                        .addGap(72, 72, 72)
+                        .addGap(29, 29, 29)
                         .addComponent(panelImage2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(panel1Layout.createSequentialGroup()
-                        .addGap(82, 82, 82)
+                        .addGap(39, 39, 39)
                         .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(147, Short.MAX_VALUE))
+                .addContainerGap(666, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(bttLista1, javax.swing.GroupLayout.PREFERRED_SIZE, 434, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -431,6 +436,7 @@ public class VentanaVotoElectronico extends javax.swing.JFrame {
     private javax.swing.JButton bttLista1;
     private javax.swing.JButton bttLista2;
     private javax.swing.JButton bttNulo;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

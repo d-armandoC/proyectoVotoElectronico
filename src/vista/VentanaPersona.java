@@ -15,10 +15,12 @@ import modeloTablaPersona.ModeloTablaPersona;
  * @author Diego Cale Pillco
  */
 public class VentanaPersona extends javax.swing.JDialog {
+
     private final boolean modal;
     private final ModeloTablaPersona modelo;
     private final Persona p;
     private final PersonaJpaController pc;
+
     public VentanaPersona(java.awt.Frame parent, boolean modal, ModeloTablaPersona modelo, Persona persona, PersonaJpaController pc) {
         super(parent, modal);
         initComponents();
@@ -31,7 +33,6 @@ public class VentanaPersona extends javax.swing.JDialog {
         }
         setLocationRelativeTo(null);
     }
-
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -55,6 +56,8 @@ public class VentanaPersona extends javax.swing.JDialog {
         bttCancelar = new javax.swing.JButton();
         bttAceptar = new javax.swing.JButton();
         panelImage1 = new org.edisoncor.gui.panel.PanelImage();
+        jpCurso = new javax.swing.JSpinner();
+        jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setUndecorated(true);
@@ -63,29 +66,44 @@ public class VentanaPersona extends javax.swing.JDialog {
         panelRectTranslucido1.setColorDeSegundoBorde(new java.awt.Color(0, 51, 204));
         panelRectTranslucido1.setColorPrimario(new java.awt.Color(0, 0, 204));
         panelRectTranslucido1.setColorSecundario(new java.awt.Color(255, 255, 255));
+        panelRectTranslucido1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panelRectTranslucido1.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, 210, 30));
 
         jLabel1.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
         jLabel1.setText("Nombre:");
+        panelRectTranslucido1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
+        panelRectTranslucido1.add(txtApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 210, 30));
 
         jLabel2.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
-        jLabel2.setText("Apellido:");
+        jLabel2.setText("Curso:");
+        panelRectTranslucido1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, -1, -1));
+        panelRectTranslucido1.add(txtCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 270, 210, 30));
+        panelRectTranslucido1.add(txtCelular, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 310, 210, 30));
 
         jLabel3.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
         jLabel3.setText("Cedula:");
+        panelRectTranslucido1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
         jLabel4.setText("Celular:");
+        panelRectTranslucido1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, -1, -1));
+        panelRectTranslucido1.add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 350, 210, 30));
 
         jLabel5.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
         jLabel5.setText("Correo:");
+        panelRectTranslucido1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, -1, -1));
 
         cbxCenero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Masculino", "Femenino" }));
+        panelRectTranslucido1.add(cbxCenero, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 390, 156, 30));
 
         jLabel6.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
         jLabel6.setText("Género:");
+        panelRectTranslucido1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, -1, -1));
+        panelRectTranslucido1.add(dtFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 230, 210, 30));
 
         jLabel7.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
         jLabel7.setText("Fecha:");
+        panelRectTranslucido1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, -1, -1));
 
         bttCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cross.gif"))); // NOI18N
         bttCancelar.setText("Cancelar");
@@ -94,6 +112,7 @@ public class VentanaPersona extends javax.swing.JDialog {
                 bttCancelarActionPerformed(evt);
             }
         });
+        panelRectTranslucido1.add(bttCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 440, -1, 40));
 
         bttAceptar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/add.png"))); // NOI18N
         bttAceptar.setText("Aceptar");
@@ -102,6 +121,7 @@ public class VentanaPersona extends javax.swing.JDialog {
                 bttAceptarActionPerformed(evt);
             }
         });
+        panelRectTranslucido1.add(bttAceptar, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, -1, 40));
 
         panelImage1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/personas.png"))); // NOI18N
 
@@ -109,112 +129,33 @@ public class VentanaPersona extends javax.swing.JDialog {
         panelImage1.setLayout(panelImage1Layout);
         panelImage1Layout.setHorizontalGroup(
             panelImage1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 96, Short.MAX_VALUE)
+            .addGap(0, 100, Short.MAX_VALUE)
         );
         panelImage1Layout.setVerticalGroup(
             panelImage1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 88, Short.MAX_VALUE)
+            .addGap(0, 70, Short.MAX_VALUE)
         );
 
-        javax.swing.GroupLayout panelRectTranslucido1Layout = new javax.swing.GroupLayout(panelRectTranslucido1);
-        panelRectTranslucido1.setLayout(panelRectTranslucido1Layout);
-        panelRectTranslucido1Layout.setHorizontalGroup(
-            panelRectTranslucido1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelRectTranslucido1Layout.createSequentialGroup()
-                .addGap(53, 53, 53)
-                .addComponent(bttAceptar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(bttCancelar)
-                .addGap(32, 32, 32))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRectTranslucido1Layout.createSequentialGroup()
-                .addGroup(panelRectTranslucido1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(panelRectTranslucido1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(dtFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelRectTranslucido1Layout.createSequentialGroup()
-                        .addContainerGap(29, Short.MAX_VALUE)
-                        .addComponent(jLabel5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panelRectTranslucido1Layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addComponent(jLabel6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(cbxCenero, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelRectTranslucido1Layout.createSequentialGroup()
-                        .addGroup(panelRectTranslucido1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(panelRectTranslucido1Layout.createSequentialGroup()
-                                .addGap(26, 26, 26)
-                                .addComponent(jLabel2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRectTranslucido1Layout.createSequentialGroup()
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(panelRectTranslucido1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRectTranslucido1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel7)
-                                        .addComponent(jLabel3))
-                                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
-                        .addGroup(panelRectTranslucido1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(txtCedula, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
-                            .addComponent(txtCelular)
-                            .addComponent(txtApellido)
-                            .addComponent(txtNombre)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panelRectTranslucido1Layout.createSequentialGroup()
-                                .addGap(17, 17, 17)
-                                .addComponent(panelImage1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addGap(19, 19, 19))
-        );
-        panelRectTranslucido1Layout.setVerticalGroup(
-            panelRectTranslucido1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelRectTranslucido1Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(panelImage1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(panelRectTranslucido1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
-                .addGap(18, 18, 18)
-                .addGroup(panelRectTranslucido1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
-                .addGap(18, 18, 18)
-                .addGroup(panelRectTranslucido1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(dtFecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7))
-                .addGap(18, 18, 18)
-                .addGroup(panelRectTranslucido1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtCedula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
-                .addGap(18, 18, 18)
-                .addGroup(panelRectTranslucido1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtCelular, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
-                .addGap(18, 18, 18)
-                .addGroup(panelRectTranslucido1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
-                .addGap(18, 18, 18)
-                .addGroup(panelRectTranslucido1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cbxCenero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6))
-                .addGap(18, 18, 18)
-                .addGroup(panelRectTranslucido1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(bttAceptar)
-                    .addComponent(bttCancelar))
-                .addGap(37, 37, 37))
-        );
+        panelRectTranslucido1.add(panelImage1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 100, 70));
+
+        jpCurso.setModel(new javax.swing.SpinnerNumberModel(0, 0, 5, 1));
+        panelRectTranslucido1.add(jpCurso, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 130, 30));
+
+        jLabel8.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
+        jLabel8.setText("Apellido:");
+        panelRectTranslucido1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelRectTranslucido1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(panelRectTranslucido1, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelRectTranslucido1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(panelRectTranslucido1, javax.swing.GroupLayout.DEFAULT_SIZE, 492, Short.MAX_VALUE)
         );
 
         pack();
@@ -242,6 +183,8 @@ public class VentanaPersona extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JSpinner jpCurso;
     private org.edisoncor.gui.panel.PanelImage panelImage1;
     private org.edisoncor.gui.panel.PanelRectTranslucido panelRectTranslucido1;
     private javax.swing.JTextField txtApellido;
@@ -258,6 +201,7 @@ public class VentanaPersona extends javax.swing.JDialog {
         p.setCelular(txtCelular.getText());
         p.setCorreo(txtCorreo.getText());
         p.setGenero(cbxCenero.getSelectedIndex());
+        p.setCurso(Integer.parseInt(jpCurso.getValue().toString()));
         p.setFechaNacimiento(dtFecha.getCalendar() != null ? dtFecha.getCalendar().getTime() : new Date());
         try {
             if (this.modal) {
@@ -276,6 +220,14 @@ public class VentanaPersona extends javax.swing.JDialog {
 
     }
 
+    public int validarCampo(Integer i) {
+        if (i != null) {
+            return i;
+        } else {
+            return 0;
+        }
+    }
+
     public void fijarPersonaVista() {
         txtNombre.setText(p.getNombre());
         txtApellido.setText(p.getApellido());
@@ -284,6 +236,7 @@ public class VentanaPersona extends javax.swing.JDialog {
         txtCorreo.setText(p.getCorreo());
         cbxCenero.setSelectedIndex(p.getGenero());
         dtFecha.setDate(p.getFechaNacimiento());
+        jpCurso.setValue(validarCampo(p.getCurso()));
     }
 
     public void limpiar() {
@@ -293,6 +246,7 @@ public class VentanaPersona extends javax.swing.JDialog {
         txtCelular.setText("");
         txtCorreo.setText("");
         cbxCenero.setSelectedIndex(0);
+        jpCurso.setValue(0);
         dtFecha.setDate(new Date());
     }
 
