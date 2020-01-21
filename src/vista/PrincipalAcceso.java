@@ -43,7 +43,6 @@ public class PrincipalAcceso extends javax.swing.JFrame {
 
         panelNice1 = new org.edisoncor.gui.panel.PanelNice();
         panelRect1 = new org.edisoncor.gui.panel.PanelRect();
-        panelImage2 = new org.edisoncor.gui.panel.PanelImage();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         bttAceptar = new javax.swing.JButton();
@@ -53,39 +52,25 @@ public class PrincipalAcceso extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         txtUsuario = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        panelRect1.setForeground(new java.awt.Color(0, 0, 204));
+        panelRect1.setForeground(new java.awt.Color(255, 255, 255));
         panelRect1.setColorDeBorde(new java.awt.Color(255, 255, 255));
-        panelRect1.setColorPrimario(new java.awt.Color(0, 0, 153));
+        panelRect1.setColorPrimario(new java.awt.Color(255, 255, 255));
         panelRect1.setColorSecundario(new java.awt.Color(0, 0, 153));
         panelRect1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panelImage2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/logo_elecciones2018.png"))); // NOI18N
-
-        javax.swing.GroupLayout panelImage2Layout = new javax.swing.GroupLayout(panelImage2);
-        panelImage2.setLayout(panelImage2Layout);
-        panelImage2Layout.setHorizontalGroup(
-            panelImage2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        panelImage2Layout.setVerticalGroup(
-            panelImage2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        panelRect1.add(panelImage2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, 250, 120));
-
         jLabel2.setFont(new java.awt.Font("Verdana", 3, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("CONTRASEÑA:");
+        jLabel2.setText("Contraseña:");
         panelRect1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Verdana", 3, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("USUARIO:");
+        jLabel1.setText("Usuario:");
         panelRect1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 120, 20));
 
         bttAceptar.setBackground(new java.awt.Color(0, 0, 153));
@@ -110,9 +95,9 @@ public class PrincipalAcceso extends javax.swing.JFrame {
                 bttCancelarActionPerformed(evt);
             }
         });
-        panelRect1.add(bttCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 330, 130, 40));
+        panelRect1.add(bttCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 320, 130, 40));
 
-        psPassword.setBackground(new java.awt.Color(0, 0, 153));
+        psPassword.setBackground(new java.awt.Color(240, 240, 240));
         psPassword.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         psPassword.setForeground(new java.awt.Color(255, 255, 255));
         psPassword.setBorder(null);
@@ -129,15 +114,15 @@ public class PrincipalAcceso extends javax.swing.JFrame {
                 psPasswordKeyPressed(evt);
             }
         });
-        panelRect1.add(psPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, 200, 30));
+        panelRect1.add(psPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, 190, 30));
 
         progresoHilo.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
         progresoHilo.setForeground(new java.awt.Color(255, 255, 255));
-        panelRect1.add(progresoHilo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 390, 350, -1));
+        panelRect1.add(progresoHilo, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 400, 350, -1));
         panelRect1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 190, 190, 10));
         panelRect1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, 190, 10));
 
-        txtUsuario.setBackground(new java.awt.Color(0, 0, 153));
+        txtUsuario.setEditable(false);
         txtUsuario.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         txtUsuario.setForeground(new java.awt.Color(255, 255, 255));
         txtUsuario.setBorder(null);
@@ -151,15 +136,23 @@ public class PrincipalAcceso extends javax.swing.JFrame {
         });
         panelRect1.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 160, 189, 30));
 
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
+        jLabel3.setText("Elecciones 2020");
+        panelRect1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, 360, 70));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelRect1, javax.swing.GroupLayout.DEFAULT_SIZE, 428, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(panelRect1, javax.swing.GroupLayout.PREFERRED_SIZE, 542, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelRect1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 429, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(panelRect1, javax.swing.GroupLayout.DEFAULT_SIZE, 509, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
@@ -208,9 +201,9 @@ public class PrincipalAcceso extends javax.swing.JFrame {
     private javax.swing.JButton bttCancelar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private org.edisoncor.gui.panel.PanelImage panelImage2;
     private org.edisoncor.gui.panel.PanelNice panelNice1;
     private org.edisoncor.gui.panel.PanelRect panelRect1;
     private javax.swing.JProgressBar progresoHilo;
